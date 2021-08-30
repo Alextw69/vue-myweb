@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1 style="color:purple">{{content}} station </h1>
+    <h1 class="station">{{content}} station </h1>
     <h1>{{ msg }}</h1>
     <ul>
       <li>
@@ -84,37 +84,37 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      content: '',
-    }
-  },
-  mounted(){
-    // this.axios.get("https://ptx.transportdata.tw/MOTC/v3/Rail/TRA/StationExit?$count=true&$format=JSON").then( res => console.log(res.data.StationExits[0].StationName.Zh_tw))
-    this.axios.get("https://ptx.transportdata.tw/MOTC/v3/Rail/TRA/StationExit?$count=true&$format=JSON").then( res => {
-      this.content = res.data.StationExits[0].StationName.Zh_tw;
-    })
-  }
-}
+      export default {
+        name: 'HelloWorld',
+        data () {
+          return {
+            msg: 'Welcome to Your Vue.js App',
+            content: '',
+          }
+        },
+        mounted(){
+          // this.axios.get("https://ptx.transportdata.tw/MOTC/v3/Rail/TRA/StationExit?$count=true&$format=JSON").then( res => console.log(res.data.StationExits[0].StationName.Zh_tw))
+          this.axios.get("https://ptx.transportdata.tw/MOTC/v3/Rail/TRA/StationExit?$count=true&$format=JSON").then( res => {
+            this.content = res.data.StationExits[0].StationName.Zh_tw;
+          })
+        }
+      }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+      h1, h2 {
+        font-weight: normal;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      a {
+        color: #42b983;
+      }
 </style>
