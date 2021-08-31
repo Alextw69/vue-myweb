@@ -1,22 +1,12 @@
+
 import Vue from 'vue'
-import App from './App'
-import router from './router'
+import App from './App.vue'
 
-import 'bootstrap/dist/css/bootstrap.min.css' 
-import {BootstrapVue,IconsPlugin} from 'bootstrap-vue'
-import 'bootstrap-vue/dist/bootstrap-vue.css' 
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+// import VueRouter from 'vue-router'
+// Vue.use(VueRouter)
+// 以上 兩行 以被引用在 App.vue , 所以此處不須引用
 
-Vue.config.productionTip = false
-Vue.use(BootstrapVue)
-Vue.use(IconsPlugin)
-Vue.use(VueAxios,axios)
-
-
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   render: h => h(App)
 })

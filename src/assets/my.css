@@ -12,3 +12,13 @@
 .station:hover{
 	background-color: rgb(241, 165, 110);
 }
+
+/* h1{
+	color:red;
+}
+p{
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+}  */
+/* 在 assets 下, CSS 會成為各組件共用區 */
