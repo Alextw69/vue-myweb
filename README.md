@@ -50,3 +50,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
  -->
 
  <!-- app.vue 下,   import './assets/my.css' -->
+
+vue-cli
+https://cli.vuejs.org/
